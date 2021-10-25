@@ -1,0 +1,44 @@
+.what {
+    margin-bottom: 30px;
+}
+
+.what__content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.what__left {
+    position: absolute;
+    left: -160px;
+    width: 774px;
+    height: 424px;
+}
+
+.what__right {
+    margin-left: auto;
+    width: 547px;
+    display: flex;
+    flex-direction: column;
+}
+
+.what__title {
+    margin-bottom: 15px;
+}
+
+.what__desc-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.what__desc {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #5A5A5A;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

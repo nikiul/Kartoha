@@ -1,0 +1,73 @@
+.steps {
+    margin-bottom: 76px;
+}
+
+.steps__title {
+    position: relative;
+    margin-bottom: 17px;
+    z-index: 3;
+}
+
+.steps__undertitle {
+    margin-bottom: 23px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #5A5A5A;
+}
+
+.steps__content {
+    position: relative;
+    padding-left: 16px;
+    padding-bottom: 11px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    background: linear-gradient(273.85deg, #FF9900 26.38%, #FFC700 72.77%);
+    border: 1px solid #FFFFFF;
+    box-shadow: 8px 8px 14px rgba(255, 153, 0, 0.36);
+    border-radius: 0px 15px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        background-image: url('../img/steps/steps-leaf1.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 142px;
+        height: 130px;
+        bottom: -100px;
+        left: 41%;
+        z-index: -1;
+    }
+}
+
+.steps__item {
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    &:first-child {
+        margin-right: 16px;
+    }
+
+    &:nth-child(2) {
+        margin-right: 80px;
+    }
+}
+
+.steps__item-title {
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 84px;
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+
+.steps__item-desc {
+    margin-left: 20px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #5A5A5A;
+}

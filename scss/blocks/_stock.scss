@@ -1,0 +1,94 @@
+.stock {
+    margin-bottom: 45px;
+}
+
+.stock__content {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 270px;
+        height: 323px;
+        background-image: url('../img/stock/stock-leaf1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        right: -102px;
+        top: -17px;
+    }
+}
+
+.stock__item {
+    width: 32%;
+    position: relative;
+    padding-top: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.stock__item-title {
+    margin-bottom: 11px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #FF9900;
+}
+
+.stock__item-undertitle {
+    margin-bottom: 34px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #5A5A5A;
+}
+
+.stock__item-img {
+    margin-bottom: 34px;
+}
+
+.stock__item-price,
+.stock__item-delivery {
+    margin-bottom: 14px;
+    display: flex;
+    flex-direction: column;
+    color: #5A5A5A;
+    text-align: center;
+
+    span {
+        margin-bottom: 5px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    p {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+.stock__item-delivery {
+    margin-bottom: 44px;
+}
+
+.stock__btn {
+    position: absolute;
+    bottom: -20px;
+}
+
+.stock__desclamer {
+    margin-top: 37px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}

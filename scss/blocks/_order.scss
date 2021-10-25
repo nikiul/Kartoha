@@ -1,0 +1,169 @@
+.order {
+    position: relative;
+    margin-bottom: 42px;
+
+
+}
+
+.order_first {
+    &::before {
+        content: '';
+        position: absolute;
+        width: 228.64px;
+        height: 180.78px;
+        background-image: url('../img/order/order-leaf3.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 0;
+        left: 218px;
+        bottom: -94px;
+    }
+}
+
+.order_second {
+    &::before {
+        content: '';
+        position: absolute;
+        width: 228.64px;
+        height: 180.78px;
+        background-image: url('../img/order/order-leaf4.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 1;
+        left: 50%;
+        bottom: -84px;}
+}
+
+.order__content {
+    position: relative;
+    padding-left: 15px;
+    padding-top: 26px;
+    padding-bottom: 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #424242;
+    border-radius: 15px;
+    border-radius: 15px;
+
+
+}
+
+.order__content_first {
+    &::before {
+        content: '';
+        position: absolute;
+        width: 186.64px;
+        height: 135.78px;
+        background-image: url('../img/order/order-leaf1.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 2;
+        right: 361px;
+        top: 75px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 142.64px;
+        height: 135.78px;
+        background-image: url('../img/order/order-leaf2.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 2;
+        right: -158px;
+        bottom: 90px;
+    }
+}
+
+.order__content_second {
+    &::before {
+        content: '';
+        position: absolute;
+        width: 186.64px;
+        height: 187.78px;
+        background-image: url('../img/order/order-leaf5.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 2;
+        right: -112px;
+        top: 57px;
+    }
+}
+
+.order__left {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+.order__title {
+    margin-bottom: 17px;
+}
+
+.order__desc {
+    margin-bottom: 12px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.order__form {
+
+}
+
+.order__input-name,
+.order__input-tel,
+.order__input-value {
+    width: 100%;
+    margin-bottom: 14px;
+    display: flex;
+    flex-direction: column;
+
+    p {
+        font-size: 13px;
+        line-height: 15px;
+        color: #C4C4C4;
+    }
+
+    input {
+        width: 100%;
+        padding: 13px 21px 16px 21px;
+        background: #FFFFFF;
+        border: 1px solid #C4C4C4;
+        border-radius: 15px;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 18px;
+        color: #000;
+        outline: none;
+    }
+}
+
+.order__btn {
+    margin-top: 15px;
+}
+
+.order__right {
+    position: absolute;
+    width: 831px;
+    height: 387px;
+    right: -206px;
+    top: -10px;
+}
+
+.order__right2 {
+    position: absolute;
+    width: 909px;
+    height: 387px;
+    right: -154px;
+    top: -75px;
+}

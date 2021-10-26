@@ -26,7 +26,7 @@
 .bar__content {
     display: flex;
     flex-direction: row;
-    align-items: end;
+    // align-items: end;
     justify-content: center;
 }
 
@@ -67,6 +67,7 @@
 
 .bar__menu {
     position: relative;
+    bottom: -22px;
     display: flex;
     flex-direction: column;
     align-items: center;

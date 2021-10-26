@@ -567,9 +567,6 @@ input::placeholder {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -623,6 +620,7 @@ input::placeholder {
 
 .bar__menu {
   position: relative;
+  bottom: -22px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

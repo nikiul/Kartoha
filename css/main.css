@@ -1615,9 +1615,9 @@ input::placeholder {
           flex-direction: column;
 }
 
-.order__input-name p,
-.order__input-tel p,
-.order__input-value p {
+.order__input-name span,
+.order__input-tel span,
+.order__input-value span {
   font-size: 13px;
   line-height: 15px;
   color: #C4C4C4;

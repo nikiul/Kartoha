@@ -11,8 +11,14 @@
         padding-bottom: 15px;
         background: #212121;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-        z-index: 3;
+        z-index: 6;
+        transition: all 0.3s ease-in;
     }
+}
+
+.out__bar {
+    transform: translateY(200%);
+    transition: all 0.3s ease-in;
 }
 
 .bar__content {

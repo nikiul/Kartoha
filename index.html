@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="libs/owl-carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/owl-carousel/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Document</title>
 </head>
@@ -66,6 +68,20 @@
                 </nav>
 
                 <div class="header__tel">
+
+                    <a class="header__tel-link" href="tel:+380964677360">+38(096) 46-77-360</a>
+
+                    <div class="header__tel-timetable">
+
+                        <img src="img/header/header-timetable-icon.svg" alt="">
+
+                        <p>работаем 24/7</p>
+
+                    </div>
+
+                </div>
+
+                <div class="header__tel header__tel_scroll">
 
                     <a class="header__tel-link" href="tel:+380964677360">+38(096) 46-77-360</a>
 
@@ -149,7 +165,7 @@
 
                 <div class="bar__content">
 
-                    <a href="#" class="bar__item">
+                    <a href="https://api.whatsapp.com/send/?phone=380985984438" class="bar__item">
 
                         <img src="img/bar/bar-whatsup.svg" alt="">
 
@@ -157,7 +173,7 @@
 
                     </a>
 
-                    <a href="#" class="bar__item">
+                    <a href="tg://resolve?domain=@alex_mov" class="bar__item">
 
                         <img src="img/bar/bar-telegram.svg" alt="">
 
@@ -185,7 +201,7 @@
 
                     </a>
 
-                    <a href="#" class="bar__item">
+                    <a href="#order_first" class="bar__item scroll-to">
 
                         <img src="img/bar/bar-buy.svg" alt="">
 
@@ -547,7 +563,7 @@
 
         </div>
 
-        <div class="questions none" id="questions">
+        <div class="questions" id="questions">
 
             <div class="container">
 
@@ -729,13 +745,13 @@
 
         </div>
 
-        <div class="reviews none">
+        <div class="reviews">
 
             <div class="container">
 
                 <h2 class="title reviews__title">Відгуки наших покупців</h2>
 
-                <div class="reviews__content">
+                <div class="reviews__content owl-carousel owl-theme">
 
                     <div class="reviews__item">
 
@@ -743,7 +759,7 @@
 
                         <p class="reviews__item-desc">47 рокiв, Конотоп</p>
 
-                        <p class="reviews__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque purus augue sit vestibulum in ligula massa fermentum venenatis. Feugiat amet ipsum et nullam lacus eros. Ut urna pulvinar sed sit massa enim morbi. Neque blandit at bibendum quis imperdiet porttitor ipsum volutpat eleifend.</p>
+                        <p class="reviews__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque purus augue sit vestibulum in ligula massa fermentum venenatis. Feugiat amet ipsum et nullam lacus eros. Ut urna pulvinar sed sit massa enim morbi. Neque blandit at bibendum quis imperdiet porttitor ipsum volutpat eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque purus augue sit vestibulum in ligula massa fermentum venenatis. Feugiat amet ipsum et nullam lacus eros. Ut urna pulvinar sed sit massa enim morbi. Neque blandit at bibendum quis imperdiet porttitor ipsum volutpat eleifend.</p>
 
                         <img src="img/reviews/reviews-items-icon.svg" alt="">
 
@@ -815,7 +831,7 @@
 
         </div>
 
-        <div class="order order_second none">
+        <div class="order order_second">
 
             <div class="container">
 
@@ -873,7 +889,7 @@
 
     </main>
 
-    <footer class="footer none">
+    <footer class="footer">
 
         <div class="container">
 
@@ -950,6 +966,7 @@
     </footer>
 
     <script src="libs/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="libs/owl-carousel/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
 
 </body>

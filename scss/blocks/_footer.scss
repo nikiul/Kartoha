@@ -12,14 +12,36 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .footer__logo {
+    @media (max-width: 1120px) {
+        width: 230px;
+    }
 
+    @media (max-width: 1000px) {
+        width: 190px;
+    }
+
+    @media (max-width: 840px) {
+        width: 140px;
+    }
+
+    @media (max-width: 800px) {
+        width: 270px;
+        margin-bottom: 34px;
+    }
 }
 
 .footer__nav {
-
+    @media (max-width: 800px) {
+        margin-bottom: 34px;
+    }
 }
 
 .footer__nav-list {
@@ -27,22 +49,49 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
 }
 
 .footer__nav-item {
     margin-right: 31px;
+
+    @media (max-width: 1050px) {
+        margin-right: 20px;
+    }
+
+    @media (max-width: 800px) {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
 }
 
 .footer__nav-link {
     font-size: 14px;
     line-height: 16px;
     color: #5A5A5A;
+
+    @media (max-width: 900px) {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    @media (max-width: 800px) {
+        font-size: 14px;
+        line-height: 16px;
+    }
 }
 
 .footer__tel {
     display: flex;
     flex-direction: column;
     align-items: start;
+
+    @media (max-width: 800px) {
+        align-items: center;
+    }
 }
 
 .footer__tel-link {
@@ -51,6 +100,26 @@
     font-size: 24px;
     line-height: 28px;
     color: #5A5A5A;
+
+    @media (max-width: 1120px) {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    @media (max-width: 1000px) {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    @media (max-width: 840px) {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    @media (max-width: 800px) {
+        font-size: 24px;
+        line-height: 28px;
+    }
 }
 
 .footer__tel-timetable {

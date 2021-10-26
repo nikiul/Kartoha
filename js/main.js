@@ -45,21 +45,6 @@ var scrolled = $(window).scrollTop();
 scrollPrev1 = scrolled;
 });
 
-// var bar = $('.bar'),
-// scrollPrev2 = 0;
-
-
-// $(window).scroll(function() {
-//     var scrolled = $(window).scrollTop();
-
-//         if ( scrolled > 250 && scrolled > scrollPrev2 ) {
-//             bar.addClass('out__bar');
-//         } else {
-//             bar.removeClass('out__bar');
-//         }
-//     scrollPrev2 = scrolled;
-// });
-
 
 $(window).scroll(function() {
     if ($(this).scrollTop() + $(window).height() > 1){

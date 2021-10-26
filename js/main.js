@@ -132,7 +132,7 @@ if(listItem) {
                     items: 1,
                     margin:10,
                     nav:true,
-                    dots: true,
+                    dots: false,
                     autoHeight:true,
                     dotsEach: true
                 });

@@ -29,7 +29,23 @@ $("a.scroll-to").on("click", function(e){
 //
 
 
-// $("a[href='#top']").click(function() {
-//     $("html, body").animate({ scrollTop: 0 }, "slow");
-//     return false;
-// });
+//
+const barMenuBtn = document.querySelector('.bar__menu');
+const headerNav = document.querySelector('.header__nav_mobile');
+const headerNavCloseBtn = document.querySelector('.header__nav-close');
+const headerNavCloseBtnMobile = document.querySelector('.header__nav-close_mobile');
+
+barMenuBtn.addEventListener('click', function(){
+    headerNav.classList.add('header__nav_mobile_active');
+    headerNavCloseBtnMobile.classList.add('header__nav-close_mobile_active');
+})
+
+headerNavCloseBtn.addEventListener('click', function(){
+    headerNav.classList.remove('header__nav_mobile_active');
+})
+
+headerNavCloseBtnMobile.addEventListener('click', function(){
+    headerNav.classList.remove('header__nav_mobile_active');
+    headerNavCloseBtnMobile.classList.remove('header__nav-close_mobile_active');
+
+})

@@ -1,0 +1,122 @@
+.bar {
+    display: none;
+
+    @media (max-width: 768px) {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding-top: 12px;
+        padding-bottom: 15px;
+        background: #212121;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+        z-index: 3;
+    }
+}
+
+.bar__content {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+}
+
+.bar__item {
+    margin-right: 40px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    img {
+        margin-bottom: 6px;
+        width: 25px;
+        height: auto;
+
+        @media (max-width: 550px) {
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+    p {
+        font-family: 'HelveticaNeueCyr', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 10px;
+        color: #FFFFFF;
+    }
+
+    @media (max-width: 420px) {
+        margin-right: 20px;
+    }
+}
+
+.bar__menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+
+    p {
+        font-family: 'HelveticaNeueCyr', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 10px;
+        color: #FFFFFF;
+    }
+
+    @media (max-width: 420px) {
+        margin-right: 20px;
+    }
+}
+
+.bar__menu-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -75px;
+    width: 58px;
+    height: 58px;
+    background: #FF8A00;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4), 0px 0px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    cursor: pointer;
+
+    span {
+        position: relative;
+        width: 33px;
+        height: 3.5px;
+        background-color: #fff;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            right: 0;
+            width: 16.5px;
+            height: 3.5px;
+            background-color: #fff;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 16.5px;
+            height: 3.5px;
+            background-color: #fff;
+        }
+    }
+}

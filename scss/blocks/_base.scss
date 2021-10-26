@@ -10,6 +10,10 @@ body {
     margin: 0;
 }
 
+.main {
+    overflow-x: hidden;
+}
+
 .container {
     max-width: 1210px;
     padding: 0 15px;
@@ -38,6 +42,8 @@ a {
 
 .btn {
     display: inline-flex;
+    justify-content: center;
+    align-items: center;
     padding: 13px 97px;
     background: linear-gradient(273.85deg, #FF9900 26.38%, #FFC700 72.77%);
     border: 1px solid #FFFFFF;
@@ -47,6 +53,7 @@ a {
     line-height: 21px;
     color: #5A5A5A;
     cursor: pointer;
+    text-align: center;
 }
 
 .title {
@@ -118,4 +125,8 @@ input {
         line-height: 18px;
         color: #C4C4C4;
     }
+}
+
+.none {
+    display: none;
 }

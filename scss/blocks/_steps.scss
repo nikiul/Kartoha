@@ -39,6 +39,21 @@
         bottom: -100px;
         left: 41%;
         z-index: -1;
+
+        @media (max-width: 768px) {
+            right: 0;
+            left: auto;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        padding-right: 16px;
+        justify-content: space-between;
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        padding-bottom: 20px;
     }
 }
 
@@ -50,10 +65,31 @@
 
     &:first-child {
         margin-right: 16px;
+
+        @media (max-width: 1200px) {
+            margin-right: 0;
+        }
     }
 
     &:nth-child(2) {
         margin-right: 80px;
+
+        @media (max-width: 1200px) {
+            margin-right: 0;
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media (max-width: 1200px) {
+        width: 32%;
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+        margin-bottom: 10px;
     }
 }
 

@@ -15,20 +15,41 @@
         left: 17%;
         top: 14%;
         z-index: 1;
+
+        @media (max-width: 1250px) {
+            left: 0;
+        }
+
+        @media (max-width: 550px) {
+            top: auto;
+            left: 28%;
+            bottom: 95px;
+            transform: rotate(278deg);
+            filter: blur(2px)
+        }
     }
 
     &::after {
         content: '';
         position: absolute;
-        width: 100.67px;
-        height: 90.55px;
-        background-image: url('../img/hero/hero-leaf2.png');
+        width: 250px;
+        height: 184px;
+        background-image: url('../img/hero/hero-leaf4.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        right: 19%;
-        top: 15%;
+        right: 15%;
+        bottom: -11%;
+
+        @media (max-width: 1250px) {
+            right: 0;
+        }
+
+        @media (max-width: 768px) {
+            content: none;
+        }
     }
+
 }
 
 .hero__content {
@@ -53,23 +74,49 @@
         background-position: center;
         right: 31%;
         bottom: 25%;
+
+        @media (max-width: 768px) {
+            right: 0;
+        }
+
+        @media (max-width: 550px) {
+            width: 130.67px;
+            height: 78.55px;
+            filter: blur(3px);
+            transform: rotate(74deg);
+            bottom: 0;
+            right: -43px;
+        }
     }
 
     &::after {
         content: '';
         position: absolute;
-        width: 196px;
-        height: 184px;
-        background-image: url('../img/hero/hero-leaf4.png');
+        width: 100.67px;
+        height: 90.55px;
+        background-image: url('../img/hero/hero-leaf2.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        right: -7%;
-        bottom: -11%;
+        right: 0%;
+        top: 15%;
+
+        @media (max-width: 768px) {
+            content: none;
+        }
+    }
+
+    @media (max-width: 550px) {
+        background-image: url('../img/hero/hero-bg-mobile.png');
+        padding-top: 19px;
+        padding-bottom: 17px;
+        padding-left: 14px;
+        padding-right: 14px;
     }
 }
 
 .hero__title {
+    position: relative;
     margin-bottom: 17px;
     display: flex;
     flex-direction: column;
@@ -79,6 +126,7 @@
     line-height: 56px;
     text-transform: uppercase;
     color: #FFFFFF;
+    z-index: 1;
 
     span {
         font-weight: 400;
@@ -86,12 +134,17 @@
         line-height: 28px;
         text-transform: capitalize;
     }
+
 }
 
 .hero__desc {
     display: flex;
     flex-direction: column;
     margin-bottom: 34px;
+
+    @media (max-width: 768px) {
+        margin-bottom: 204px;
+    }
 }
 
 .hero__desc-item {
@@ -129,8 +182,10 @@
     }
 }
 
-
-
 .hero__btn {
-
+    @media (max-width: 550px) {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
 }

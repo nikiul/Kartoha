@@ -2,7 +2,14 @@
     position: relative;
     margin-bottom: 42px;
 
+    .container {
+        @media (max-width: 550px) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
 
+    // @media (max-width:)
 }
 
 .order_first {
@@ -18,6 +25,10 @@
         z-index: 0;
         left: 218px;
         bottom: -94px;
+
+        @media (max-width: 780px) {
+            content: none;
+        }
     }
 }
 
@@ -46,9 +57,16 @@
     align-items: center;
     background: #424242;
     border-radius: 15px;
-    border-radius: 15px;
 
+    @media (max-width: 780px) {
+        flex-direction: column;
+        padding-left: 0;
+    }
 
+    @media (max-width: 550px) {
+        padding-top: 18px;
+        border-radius: 0;
+    }
 }
 
 .order__content_first {
@@ -64,6 +82,17 @@
         z-index: 2;
         right: 361px;
         top: 75px;
+
+        @media (max-width: 1050px) {
+            width: 141.64px;
+            height: 87.78px;
+            right: 266px;
+            top: 120px;
+        }
+
+        @media (max-width: 780px) {
+            content: none;
+        }
     }
 
     &::after {
@@ -98,13 +127,35 @@
 }
 
 .order__left {
+    position: relative;
     width: 550px;
     display: flex;
     flex-direction: column;
+    z-index: 2;
+
+    @media (max-width: 915px) {
+        width: 400px;
+    }
+
+    @media (max-width: 780px) {
+        width: 550px;
+    }
+
+    @media (max-width: 620px) {
+        width: 100%;
+    }
 }
 
 .order__title {
     margin-bottom: 17px;
+
+    @media (max-width: 780px) {
+        text-align: center;
+    }
+
+    @media (max-width: 550px) {
+        margin-bottom: 9px;
+    }
 }
 
 .order__desc {
@@ -112,10 +163,18 @@
     font-size: 18px;
     line-height: 21px;
     color: #FFFFFF;
+
+    @media (max-width: 780px) {
+        text-align: center;
+    }
 }
 
 .order__form {
-
+    @media (max-width: 620px) {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .order__input-name,
@@ -150,6 +209,12 @@
 
 .order__btn {
     margin-top: 15px;
+
+    @media (max-width: 780px) {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
 }
 
 .order__right {
@@ -158,6 +223,23 @@
     height: 387px;
     right: -206px;
     top: -10px;
+
+    @media (max-width: 1050px) {
+        top: 40px;
+        width: 700px;
+        height: auto;
+    }
+
+    @media (max-width: 780px) {
+        position: relative;
+        right: auto;
+        height: 350px;
+        top: auto;
+    }
+
+    @media (max-width: 550px) {
+        right: -120px;
+    }
 }
 
 .order__right2 {

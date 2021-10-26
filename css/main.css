@@ -1568,6 +1568,8 @@ input::placeholder {
 @media (max-width: 550px) {
   .order__title {
     margin-bottom: 9px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -1581,6 +1583,13 @@ input::placeholder {
 @media (max-width: 780px) {
   .order__desc {
     text-align: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .order__desc {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 

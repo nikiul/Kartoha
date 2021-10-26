@@ -61,6 +61,16 @@ scrollPrev1 = scrolled;
 // });
 
 
+$(window).scroll(function() {
+    if ($(this).scrollTop() + $(window).height() > 1){
+        $('bar').addClass("sticky");
+    }
+    else{
+        $('bar').removeClass("sticky");
+    }
+});
+
+
 // аккордеон в questions
 const questionsItem = document.querySelectorAll('.questions__item');
 

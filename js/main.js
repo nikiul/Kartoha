@@ -133,8 +133,8 @@ if(listItem) {
                     margin:10,
                     nav:true,
                     dots: false,
-                    autoHeight:true,
-                    dotsEach: true
+                    autoHeight:true
+                    // dotsEach: true
                 });
             }else{
                 reviewsCarousel.trigger('destroy.owl.carousel')

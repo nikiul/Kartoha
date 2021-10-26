@@ -479,13 +479,13 @@
 
                         <p class="order__desc">Треба просто заповнити форму и мы подзвонимо Вам</p>
 
-                        <form action="" class="order__form">
+                        <form method="POST" action="/php/telega.php" class="order__form">
 
                             <label class="order__input-name">
 
                                 <span>Iм’я</span>
 
-                                <input type="text" placeholder="Iван Iванов">
+                                <input type="text" required name="name" placeholder="Iван Iванов">
 
                             </label>
 
@@ -493,7 +493,7 @@
 
                                 <span>Телефон</span>
 
-                                <input type="tel" placeholder="+38 (098) 987 76 76">
+                                <input type="tel" required name="phone" placeholder="+38 (098) 987 76 76">
 
                             </label>
 
@@ -501,11 +501,11 @@
 
                                 <span>Скільки кг потрібно?</span>
 
-                                <input type="number" placeholder="100">
+                                <input type="number" required name="size" placeholder="100">
 
                             </label>
 
-                            <button type="button" class="btn order__btn">Замовити</button>
+                            <button type="submit" class="btn order__btn">Замовити</button>
 
                         </form>
 
@@ -843,13 +843,13 @@
 
                         <p class="order__desc">Треба просто заповнити форму и мы подзвонимо Вам</p>
 
-                        <form action="" class="order__form">
+                        <form method="POST" action="/php/telega.php" class="order__form">
 
                             <label class="order__input-name">
 
                                 <span>Iм’я</span>
 
-                                <input type="text" placeholder="Iван Iванов">
+                                <input type="text" required name="name" placeholder="Iван Iванов">
 
                             </label>
 
@@ -857,7 +857,7 @@
 
                                 <span>Телефон</span>
 
-                                <input type="tel" placeholder="+38 (098) 987 76 76">
+                                <input type="tel" required name="phone" placeholder="+38 (098) 987 76 76">
 
                             </label>
 
@@ -865,11 +865,11 @@
 
                                 <span>Скільки кг потрібно?</span>
 
-                                <input type="number" placeholder="100">
+                                <input type="number" required name="size" placeholder="100">
 
                             </label>
 
-                            <button type="button" class="btn order__btn">Замовити</button>
+                            <button type="submit" class="btn order__btn">Замовити</button>
 
                         </form>
 

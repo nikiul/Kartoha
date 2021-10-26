@@ -550,13 +550,6 @@ input::placeholder {
   }
 }
 
-.out__bar {
-  -webkit-transform: translateY(220%);
-          transform: translateY(220%);
-  -webkit-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
-}
-
 .bar__content {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -45,20 +45,20 @@ var scrolled = $(window).scrollTop();
 scrollPrev1 = scrolled;
 });
 
-var bar = $('.bar'),
-scrollPrev2 = 0;
+// var bar = $('.bar'),
+// scrollPrev2 = 0;
 
 
-$(window).scroll(function() {
-    var scrolled = $(window).scrollTop();
+// $(window).scroll(function() {
+//     var scrolled = $(window).scrollTop();
 
-        if ( scrolled > 250 && scrolled > scrollPrev2 ) {
-            bar.addClass('out__bar');
-        } else {
-            bar.removeClass('out__bar');
-        }
-    scrollPrev2 = scrolled;
-});
+//         if ( scrolled > 250 && scrolled > scrollPrev2 ) {
+//             bar.addClass('out__bar');
+//         } else {
+//             bar.removeClass('out__bar');
+//         }
+//     scrollPrev2 = scrolled;
+// });
 
 
 // аккордеон в questions
@@ -134,7 +134,6 @@ if(listItem) {
                     nav:true,
                     dots: false,
                     autoHeight:true
-                    // dotsEach: true
                 });
             }else{
                 reviewsCarousel.trigger('destroy.owl.carousel')
